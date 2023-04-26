@@ -14,8 +14,27 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  let newArray = array.map(i => i[propiedad]);
 
+ /* for (let i = 0; i < array.length; i++){
+    for (let ele in array[i]){
+      if (ele == propiedad){
+        newArray.push(array[i][ele]);
+      }
+    }
+  }*/
+  return newArray;
 }
+
+
+/*const pluck = (arr, key) => arr.map(i => i[key]);
+const simpsons = [
+  { name: 'lisa', age: 8 },
+  { name: 'homer', age: 36 },
+  { name: 'marge', age: 34 },
+  { name: 'bart', age: 10 }
+];
+pluck(simpsons, 'age'); // [8, 36, 34, 10]*/
 
 // No modifiques nada debajo de esta linea //
 
